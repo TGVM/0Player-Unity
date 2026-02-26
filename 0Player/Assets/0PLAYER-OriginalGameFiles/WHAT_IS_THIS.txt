@@ -1,0 +1,7 @@
+0PLAYER is an experimental puzzle game that exists entirely within the included image 0PLAYER.png.
+
+While 0PLAYER's mechanics are consistent with those of a digital interactive game, its puzzles are designed for this non-interactive medium.
+
+We recommend using an image editor, not for laboriously emulating every single input, but for note-taking and as a visualization aid. Editors that can handle large images include Krita and Paint.NET.
+
+We've also included a HINTS directory for further clarification about 0PLAYER's mechanics.

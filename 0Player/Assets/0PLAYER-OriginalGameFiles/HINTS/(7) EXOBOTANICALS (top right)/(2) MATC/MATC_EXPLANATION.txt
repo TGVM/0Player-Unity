@@ -1,0 +1,1 @@
+MATERIAL CAPACITORS: CAPACITOR mechanics apply to Material as well.

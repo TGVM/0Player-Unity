@@ -1,0 +1,1 @@
+COLLAPSE: If a capacitor ceases to form a continuous loop, it can no longer remain powered independently.

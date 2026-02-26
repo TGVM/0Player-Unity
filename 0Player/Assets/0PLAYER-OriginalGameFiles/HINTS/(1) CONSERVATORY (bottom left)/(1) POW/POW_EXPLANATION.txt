@@ -1,0 +1,1 @@
+POWER: If unlit wire becomes connected to a power source, it becomes lit. Additionally, if a lit wire becomes disconnected from a power source, it becomes unlit.

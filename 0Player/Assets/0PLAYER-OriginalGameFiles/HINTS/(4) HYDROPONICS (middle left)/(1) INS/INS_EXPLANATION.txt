@@ -1,0 +1,1 @@
+INSULATION: Power cannot flow through covered wire.

@@ -1,0 +1,1 @@
+PRIORITY: When a tile movement causes a gate to lose power, the tile will finish moving before the gate closes.

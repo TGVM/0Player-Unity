@@ -1,0 +1,1 @@
+FLASHING: Power flows continuously, even during a tile's movement.

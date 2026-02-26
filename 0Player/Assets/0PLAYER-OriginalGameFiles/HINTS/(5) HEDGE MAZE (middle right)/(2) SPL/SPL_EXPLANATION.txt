@@ -1,0 +1,1 @@
+SPLITTING: If a gate is closed on top of a polyomino, it will split it into multiple pieces.

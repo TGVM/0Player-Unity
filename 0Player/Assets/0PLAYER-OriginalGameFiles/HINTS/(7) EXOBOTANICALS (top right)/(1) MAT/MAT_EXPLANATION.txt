@@ -1,0 +1,1 @@
+MATERIAL: Unlit Material is lit up when connected to a power source, and becomes unlit if disconnected.

@@ -1,0 +1,1 @@
+MULTISELECT: If a piece is split while selected, the split pieces will remain selected.

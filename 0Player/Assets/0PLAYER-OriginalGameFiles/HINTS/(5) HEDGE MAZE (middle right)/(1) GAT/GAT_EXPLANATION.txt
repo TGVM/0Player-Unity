@@ -1,0 +1,1 @@
+GATES: Power cannot flow through a closed gate.

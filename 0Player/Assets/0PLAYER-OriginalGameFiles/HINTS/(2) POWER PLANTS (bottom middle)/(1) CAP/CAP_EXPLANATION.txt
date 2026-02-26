@@ -1,0 +1,1 @@
+CAPACITORS: When an unlit loop of wire becomes lit by another lit power source, it remains lit if disconnected from the other power source. 

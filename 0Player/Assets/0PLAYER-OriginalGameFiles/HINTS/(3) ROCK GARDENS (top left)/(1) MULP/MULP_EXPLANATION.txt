@@ -1,0 +1,1 @@
+MULTIPUSH: Selected tiles can push an unlimited amount of other tiles in their movement path. 
