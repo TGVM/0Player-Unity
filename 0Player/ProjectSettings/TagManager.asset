@@ -41,8 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: front
+  - name: Background
+    uniqueID: 2850245131
+    locked: 0
+  - name: Front
     uniqueID: 900286875
+    locked: 0
+  - name: Interactables
+    uniqueID: 3849993471
     locked: 0
   m_RenderingLayers:
   - Default
