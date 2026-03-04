@@ -2,44 +2,26 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    [SerializeField] private float speed = 5f;
+    private Rigidbody2D rb;
+    private Vector2 movement;
 
-    private Transform player;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        player = GetComponent<Transform>();
+        rb = GetComponent<Rigidbody2D>();
+        Debug.Log(rb);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            player.position = MoveOnY(player.position, 1f);
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            player.position = MoveOnX(player.position, -1f);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            player.position = MoveOnY(player.position, -1f);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            player.position = MoveOnX(player.position, 1f);
-        }
-
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        movement = movement.normalized;
     }
 
-    private Vector3 MoveOnY(Vector3 pos, float movement)
+    void FixedUpdate()
     {
-        return new Vector3(pos.x, pos.y + movement, pos.z);
+        rb.linearVelocity = movement * speed;
     }
 
-    private Vector3 MoveOnX(Vector3 pos, float movement)
-    {
-        return new Vector3(pos.x + movement, pos.y, pos.z);
-    }
 }
