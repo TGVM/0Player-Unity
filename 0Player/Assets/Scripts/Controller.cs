@@ -5,6 +5,7 @@ public class Controller : MonoBehaviour
     [SerializeField] private float speed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
+    private bool isCurrentController = false;
 
     void Awake()
     {
@@ -14,6 +15,7 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        if (!isCurrentController) return;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
@@ -22,6 +24,10 @@ public class Controller : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = movement * speed;
+    }
+
+    public void SetCurrentController(bool value){
+        isCurrentController = value;
     }
 
 }
