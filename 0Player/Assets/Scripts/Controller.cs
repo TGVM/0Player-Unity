@@ -3,6 +3,8 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     private Rigidbody2D rb;
     private Vector2 movement;
     private bool isCurrentController = false;
@@ -10,7 +12,7 @@ public class Controller : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log(rb);
+        spriteRenderer.enabled = false;
     }
 
     void Update()
@@ -28,6 +30,7 @@ public class Controller : MonoBehaviour
 
     public void SetCurrentController(bool value){
         isCurrentController = value;
+        spriteRenderer.enabled = value;
     }
 
 }
